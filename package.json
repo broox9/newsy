@@ -1,0 +1,50 @@
+{
+  "name": "someapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "NODE_ENV=production npm run build",
+    "watch": "npm run build -- -w",
+    "test": "./node_modules/.bin/jest --coverage"
+  },
+  "keywords": [],
+  "author": "Brookes Stephens <broox9@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.16.2",
+    "ejs": "2.5.6",
+    "express": "4.15.3",
+    "md5": "2.2.1",
+    "nodemon": "1.11.0",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-redux": "5.0.5",
+    "redux": "3.7.2",
+    "redux-devtools": "3.4.0",
+    "redux-devtools-extension": "2.13.2",
+    "redux-thunk": "2.2.0",
+    "styled-components": "2.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.25.0",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-async-to-generator": "6.24.1",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2017": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "enzyme": "2.9.1",
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
+    "jest-enzyme": "3.6.1",
+    "react-addons-test-utils": "15.6.0",
+    "react-test-renderer": "15.6.1",
+    "webpack": "3.2.0"
+  }
+}
